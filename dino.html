@@ -1,0 +1,67 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="dino-intro">This is a drawing of a dinosaur</div>
+    <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="500">
+      <path opacity="1" fill="#90bf7a" fill-opacity="0" stroke="#225622" stroke-width="3" stroke-opacity="1" class="dino" d="M54.21 134.11L57.41 107.28L78.7 103.05L100 107.28L115.98 124.23L127.69 146.82L135.15 172.23L146.86 197.64L159.64 224.47L174.55 244.24L194.79 249.88L215.02 247.06L234.19 235.76L254.42 225.88L273.59 216L292.76 204.7L313 196.23L333.23 189.17L353.47 192L374.77 199.06L393.94 210.35L414.17 220.23L431.21 235.76L445.05 255.53L456.77 279.53L466.35 306.36L474.87 334.59L484.46 360.01L495.11 384.01L506.82 406.6L527.06 408.01L547.29 402.36L556.88 378.36L562.2 351.54L579.24 336.01L599.47 333.18L586.69 355.77L569.65 371.3L567.52 398.13L567.52 424.95L552.62 443.31L532.38 448.96L512.15 450.37L491.91 441.9L473.81 429.19L453.57 415.07L435.47 398.13L421.62 378.36L407.78 358.6L406.71 385.42L412.04 412.25L414.17 439.07L397.13 454.6L376.9 451.78L377.96 424.95L365.18 403.78L352.4 382.6L344.95 410.83L335.36 434.84L314.06 440.48L306.61 413.66L307.67 385.42L287.44 382.6L282.11 409.42L279.98 436.25L260.81 446.13L251.23 422.13L251.23 395.3L237.38 415.07L224.61 437.66L210.76 457.43L190.53 458.84L190.53 432.01L203.31 410.83L217.15 391.07L206.5 365.66L187.33 355.77L168.16 343.07L156.45 320.48L144.73 297.89L131.95 275.3L119.17 254.12L110.65 228.7L105.33 201.88L101.07 173.64L96.81 146.82L76.57 139.76L56.34 141.17"></path>
+      <circle class="eye" cx="75" cy="120" r="4" stroke="black" stroke-width="1" fill="black" fill-opacity="0" stroke-opacity="0" />
+    </svg>
+    <div class="resignation">It is also my letter of resignation</div>
+    <script>
+    </script>
+    <style>
+      .dino {
+        stroke-dasharray: 2125;
+        stroke-dashoffset: 2125;
+        animation: dash 4s linear forwards;
+      }
+      .eye {
+        stroke-dasharray: 5;
+        stroke-dashoffset: 5;
+        animation: eye 0.25s linear 4s forwards;
+      }
+      .dino-intro {
+        font-family: cursive;
+        font-size: 3em;
+        margin-left: 2rem;
+        stroke-dasharray: 50;
+        stroke-dashoffset: 50;
+        opacity: 0;
+        animation: intro 0.5s linear 4.25s forwards;
+      }
+      .resignation {
+        margin-left: 2rem;
+        font-size: 2.5em;
+        stroke-dasharray: 50;
+        stroke-dashoffset: 50;
+        opacity: 0;
+        animation: resign 0.5s linear 4.5s forwards;
+      }
+      @keyframes dash {
+        0% { stroke-dashoffset: 2125; fill-opacity: 0;}
+        90% { stroke-dashoffset: 0; fill-opacity: 0;} 
+        100% { stroke-dashoffset: 0; fill-opacity: 1;} 
+      }
+      @keyframes eye {
+        0% { stroke-dashoffset: 5; fill-opacity: 0;}
+        100% { stroke-dashoffset: 0; fill-opacity: 1;} 
+      }
+      @keyframes intro {
+        0% { stroke-dashoffset: 50; opacity: 0;}
+        100% { stroke-dashoffset: 0; opacity: 1;} 
+      }
+      @keyframes resign {
+        0% { stroke-dashoffset: 50; opacity: 0;}
+        100% { stroke-dashoffset: 0; opacity: 1;} 
+      }
+      /* @keyframes dinofill {
+        to {
+          fill-opacity: 1;
+        }
+      } */
+
+
+    </style>
+  </body>
+</html>
